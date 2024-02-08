@@ -3,6 +3,10 @@ body {
     background-size: cover;
 }
 
+h3 {
+    margin: 10px;
+}
+
 .happy-new-year-container {
     height: 100vh;
     display: flex;
@@ -12,8 +16,8 @@ body {
 }
 
 #tpbank-image {
-    height: 250px;
-    width: 200px;
+    height: 400px;
+    width: 350px;
 }
 
 #video {
