@@ -22,8 +22,26 @@ let isAudioPlaying = true;
 
 function handleNoPointerOver() {
     noCount++;
-    const newX = Math.random() * (window.innerWidth - 50);
-    const newY = Math.random() * (window.innerHeight - 50);
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+    const buttonWidth = noButton.offsetWidth;
+    const buttonHeight = noButton.offsetHeight;
+
+    let newX = Math.random() * (windowWidth - buttonWidth);
+    let newY = Math.random() * (windowHeight - buttonHeight);
+
+    if (newX < 0) {
+        newX = 0;
+    } else if (newX + buttonWidth > windowWidth) {
+        newX = windowWidth - buttonWidth;
+    }
+
+    if (newY < 0) {
+        newY = 0;
+    } else if (newY + buttonHeight > windowHeight) {
+        newY = windowHeight - buttonHeight;
+    }
+
     noButton.style.left = newX + "px";
     noButton.style.top = newY + "px";
     noButton.textContent = getNoButtonText();
