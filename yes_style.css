@@ -1,0 +1,23 @@
+body {
+    background-image: url(./items/background.jpeg);
+    background-size: cover;
+}
+
+.happy-new-year-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tpbank-image {
+    height: 250px;
+    width: 200px;
+}
+
+#video {
+    height: 600;
+    width: 650;
+    z-index: 0;
+}

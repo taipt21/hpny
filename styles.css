@@ -1,0 +1,65 @@
+body {
+    background-image: url(./items/background.jpeg);
+    background-size: contain;
+}
+
+.happy-new-year-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.audio-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.audio-button {
+    border-radius: 10px;
+}
+
+.cat-image {
+    height: auto;
+    max-width: 350px;
+    border: 3px solid red;
+}
+
+.yesButton {
+    background-color: rgba(255, 0, 0, 0.594);
+    color: white;
+    position: absolute;
+    margin-right: 150px;
+    border-radius: 12px;
+    border-style: none;
+    padding: 5px 8px;
+}
+
+.noButton {
+    background-color: rgb(244, 175, 186);
+    position: absolute;
+    color: white;
+    transition: 0.5s;
+    margin-left: 100px;
+    border-radius: 12px;
+    border-style: none;
+    padding: 5px 8px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 15px 32px;
+    border-radius: 12px;
+    border-style: none;
+}
+
+.yes-text {
+    color: red;
+}
