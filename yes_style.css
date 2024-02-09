@@ -15,13 +15,18 @@ h3 {
     flex-direction: column;
 }
 
+.heart-img {
+    height: 50px;
+    width: 50px;
+}
+
 #tpbank-image {
-    height: 400px;
-    width: 350px;
+    height: 350px;
+    width: 300px;
 }
 
 #video {
-    height: 600;
-    width: 650;
+    height: 550;
+    width: 600;
     z-index: 0;
 }
